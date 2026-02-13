@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Biasa</title>
+    <link rel="stylesheet" href="valentine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&family=Sacramento&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-heart">
+                <i class="fas fa-heart"></i>
+            </div>
+            <p class="loading-text">Loading Magic...</p>
+        </div>
+    </div>
+
+    <!-- Background Particles -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo" id="logo">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="title-wrapper">
+                        <h1 id="website-title" class="website-title">Web Biasa</h1>
+                        <div class="title-underline" id="title-underline"></div>
+                    </div>
+                </div>
+                <p class="header-subtitle" id="header-subtitle">
+                    Website sederhana tanpa embel-embel khusus
+                </p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Button Section -->
+            <section class="button-section">
+                <div class="section-intro">
+                    <h2 class="section-title">
+                        <i class="fas fa-mouse-pointer"></i>
+                        Coba Klik Tombol Ini
+                        <i class="fas fa-hand-point-down"></i>
+                    </h2>
+                    <p class="section-description">
+                        Tombol biasa yang akan mengubah segalanya
+                    </p>
+                </div>
+
+                <div class="magic-circle">
+                    <div class="circle-ring circle-ring-1"></div>
+                    <div class="circle-ring circle-ring-2"></div>
+                    <div class="circle-ring circle-ring-3"></div>
+                    
+                    <div class="button-wrapper">
+                        <button id="magic-button" class="magic-button" aria-label="Aktifkan mode Valentine">
+                            <div class="button-inner">
+                                <div class="button-shine"></div>
+                                <div class="button-pulse"></div>
+                                <div class="button-content">
+                                    <span class="button-text" id="button-text">Click Me</span>
+                                    <div class="button-icon">
+                                        <i class="fas fa-heart icon-main"></i>
+                                        <i class="fas fa-magic icon-sparkle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        
+                        <div class="button-hint">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Klik untuk kejutan spesial!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pre-animation elements (hidden initially) -->
+                <div class="pre-animation">
+                    <div class="sparkle" id="sparkle-1"><i class="fas fa-star"></i></div>
+                    <div class="sparkle" id="sparkle-2"><i class="fas fa-sparkle"></i></div>
+                    <div class="sparkle" id="sparkle-3"><i class="fas fa-gem"></i></div>
+                </div>
+            </section>
+
+            <!-- Valentine Content (Hidden Initially) -->
+            <div class="valentine-content" id="valentine-content">
+                <!-- Hero Message -->
+                <section class="hero-message animate__animated">
+                    <div class="message-container">
+                        <div class="message-frame">
+                            <div class="frame-corner corner-tl"></div>
+                            <div class="frame-corner corner-tr"></div>
+                            <div class="frame-corner corner-bl"></div>
+                            <div class="frame-corner corner-br"></div>
+                            
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h2 class="message-title">
+                                        <span class="heart-icon"><i class="fas fa-heart"></i></span>
+                                        Untuk Ressa (Eca) Tercinta
+                                        <span class="heart-icon"><i class="fas fa-heart"></i></span>
+                                    </h2>
+                                    <div class="message-date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        Valentine Special 2024
+                                    </div>
+                                </div>
+                                
+                                <div class="message-body">
+                                    <div class="salutation">
+                                        <p class="greeting">Hai Sayangku Ressa (Eca),</p>
+                                        <div class="salutation-heart">
+                                            <i class="fas fa-heartbeat"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="message-text">
+                                        <p class="paragraph">
+                                            Di hari yang penuh cinta ini, aku ingin mengungkapkan perasaan terdalamku. 
+                                            Setiap momen bersamamu adalah anugerah tak terhingga yang membuat hidupku bermakna.
+                                        </p>
+                                        
+                                        <div class="special-quote">
+                                            <div class="quote-wrapper">
+                                                <i class="fas fa-quote-left quote-icon"></i>
+                                                <p class="quote-text">
+                                                    "Selamat Hari Valentine Sayangku! Semoga kita bisa terus bersama selamanya, 
+                                                    membangun lebih banyak kenangan indah, dan saling mencintai tanpa syarat 
+                                                    dalam setiap perjalanan hidup kita. Kamu adalah alasan tersenyumku setiap hari."
+                                                </p>
+                                                <i class="fas fa-quote-right quote-icon"></i>
+                                            </div>
+                                            <div class="quote-author">
+                                                — Dengan Cinta Tak Terbatas —
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="paragraph">
+                                            Terima kasih telah menjadi bagian terindah dalam hidupku. 
+                                            Aku bersyukur bisa memanggilmu milikku setiap hari dan membangun mimpi bersama.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="message-closing">
+                                        <div class="signature">
+                                            <p>Dengan semua cinta di hatiku,</p>
+                                            <div class="signature-line">
+                                                <div class="line-dot"></div>
+                                                <div class="line-dot"></div>
+                                                <div class="line-dot"></div>
+                                            </div>
+                                            <p class="signature-name">Yang Selalu Mencintaimu</p>
+                                        </div>
+                                        
+                                        <div class="love-seal">
+                                            <div class="seal-circle">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <span class="seal-text">Cinta Abadi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Hearts -->
+                    <div class="floating-hearts">
+                        <div class="heart" id="fh1"><i class="fas fa-heart"></i></div>
+                        <div class="heart" id="fh2"><i class="fas fa-heart"></i></div>
+                        <div class="heart" id="fh3"><i class="fas fa-heart"></i></div>
+                        <div class="heart" id="fh4"><i class="fas fa-heart"></i></div>
+                        <div class="heart" id="fh5"><i class="fas fa-heart"></i></div>
+                    </div>
+                </section>
+
+                <!-- Love Features -->
+                <section class="love-features">
+                    <div class="features-header">
+                        <h3 class="features-title">
+                            <i class="fas fa-gem"></i>
+                            Keajaiban Cinta Kita
+                            <i class="fas fa-gem"></i>
+                        </h3>
+                        <p class="features-subtitle">
+                            Hal-hal indah yang kita miliki bersama
+                        </p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="card-shine"></div>
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-infinity"></i>
+                                </div>
+                                <h4 class="feature-title">Cinta Tak Terbatas</h4>
+                                <p class="feature-description">
+                                    Seperti bintang di langit, cinta kita tak berujung dan selalu bersinar terang
+                                </p>
+                                <div class="feature-sparkle">
+                                    <i class="fas fa-sparkle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="card-shine"></div>
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-laugh-beam"></i>
+                                </div>
+                                <h4 class="feature-title">Tawa Bahagia</h4>
+                                <p class="feature-description">
+                                    Setiap senyummu adalah sinar matahari yang menghangatkan jiwa
+                                </p>
+                                <div class="feature-sparkle">
+                                    <i class="fas fa-sparkle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="card-shine"></div>
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <h4 class="feature-title">Dukungan Setia</h4>
+                                <p class="feature-description">
+                                    Selalu ada untukmu dalam suka dan duka, sekarang dan selamanya
+                                </p>
+                                <div class="feature-sparkle">
+                                    <i class="fas fa-sparkle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="card-shine"></div>
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-memory"></i>
+                                </div>
+                                <h4 class="feature-title">Kenangan Abadi</h4>
+                                <p class="feature-description">
+                                    Setiap momen bersamamu adalah harta karun yang tak ternilai harganya
+                                </p>
+                                <div class="feature-sparkle">
+                                    <i class="fas fa-sparkle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Memory Gallery -->
+                <section class="memory-gallery">
+                    <div class="gallery-header">
+                        <h3 class="gallery-title">
+                            <i class="fas fa-images"></i>
+                            Galeri Kenangan Kita
+                            <i class="fas fa-images"></i>
+                        </h3>
+                        <p class="gallery-subtitle">
+                            Momen-momen indah yang tak terlupakan
+                        </p>
+                    </div>
+                    
+                    <div class="gallery-container">
+                        <div class="memory-frame">
+                            <div class="frame-inner">
+                                <div class="memory-placeholder">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Pertama Bertemu</p>
+                                </div>
+                                <div class="memory-overlay">
+                                    <span>Momen Spesial</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="memory-frame">
+                            <div class="frame-inner">
+                                <div class="memory-placeholder">
+                                    <i class="fas fa-smile-wink"></i>
+                                    <p>Tawa Bahagia</p>
+                                </div>
+                                <div class="memory-overlay">
+                                    <span>Senyum Indah</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="memory-frame">
+                            <div class="frame-inner">
+                                <div class="memory-placeholder">
+                                    <i class="fas fa-sun"></i>
+                                    <p>Petualangan</p>
+                                </div>
+                                <div class="memory-overlay">
+                                    <span>Bersama Selamanya</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Love Counter -->
+                <section class="love-counter">
+                    <div class="counter-container">
+                        <div class="counter-item">
+                            <div class="counter-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="counter-number" id="love-days">0</div>
+                            <p class="counter-label">Hari Penuh Cinta</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="counter-number" id="memories">0</div>
+                            <p class="counter-label">Kenangan Indah</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter-icon">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <div class="counter-number">∞</div>
+                            <p class="counter-label">Cinta Tak Terhingga</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Default Content (Visible Initially) -->
+            <div class="default-content" id="default-content">
+                <section class="info-section">
+                    <h3 class="info-title">
+                        <i class="fas fa-info-circle"></i>
+                        Tentang Website Ini
+                    </h3>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="info-card-title">Web Biasa</h4>
+                            <p class="info-card-text">
+                                Website sederhana yang dibuat dengan HTML, CSS, dan JavaScript standar.
+                            </p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4 class="info-card-title">Desain Minimalis</h4>
+                            <p class="info-card-text">
+                                Tampilan bersih dan sederhana tanpa efek khusus atau animasi yang berat.
+                            </p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h4 class="info-card-title">Cepat & Ringan</h4>
+                            <p class="info-card-text">
+                                Dioptimalkan untuk performa optimal di semua perangkat dan koneksi.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="footer-site-name">Web Biasa</span>
+                    </div>
+                    
+                    <div class="footer-status" id="footer-status">
+                        <i class="fas fa-lock"></i>
+                        <span>Status: Normal</span>
+                    </div>
+                </div>
+                
+                <div class="footer-middle">
+                    <p class="footer-text">
+                        Website sederhana tanpa embel-embel khusus. 
+                        Dibuat untuk tujuan demonstrasi dan pembelajaran.
+                    </p>
+                    
+                    <div class="footer-privacy">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Mode: <strong id="mode-status">Default</strong></span>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        &copy; 2024 Web Biasa. Semua hak dilindungi.
+                    </p>
+                    <div class="footer-hint">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Klik tombol untuk pengalaman berbeda!</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti-container"></div>
+    
+    <!-- Audio Elements -->
+    <audio id="click-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-magic-sparkle-300.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="valentine-sound" preload="auto" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-loving-heart-539.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="magic-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-fairy-magic-sparkle-852.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="heartbeat-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-heartbeat-70.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="valentine.js"></script>
+</body>
+</html>
